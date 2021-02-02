@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+  <script src="index.js" defer="true"></script>
+  <title>password-genarator</title>
+</head>
+<body>
+  <div class="clipContainer" id="clipContainer">
+    <div class="clipMessage" id="clipMessage">
+      <span class="clipText" id="clipText"></span>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="title">Password Genarator</h3>
+    <div class="display">
+      <input type="text" class="output" id="output" disabled="true" />
+      <span class="clipBoard" id="clipBoard">copy</span>
+    </div>
+    <div class="div">
+      <label for="uppercase">Password Length</label>
+      <input type="number" class="length" id="length" min="6" max="20" value="15">
+    </div>
+    <div class="div">
+      <label for="uppercase">Include Uppercase Letters
+      </label>
+      <input type="checkbox" class="input" id="uppercase">
+    </div>
+    <div class="div">
+      <label for="lowercase">Include Lowercase Letters</label>
+      <input type="checkbox" name="" id="lowercase">
+    </div>
+    <div class="div">
+      <label for="symbol">Include Symbols</label>
+      <input type="checkbox" name="" id="symbol">
+    </div>
+    <div class="div">
+      <label for="number">Include Numbers</label>
+      <input type="checkbox" name="" id="number">
+    </div>
+    <button class="genBtn" id="genBtn">Generate Password</button>
+  </div>
+
+</body>
+</html>
